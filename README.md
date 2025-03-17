@@ -4,4 +4,4 @@
 
 3. Para ejecutar el proyecto: `node index.js`
 
-La gramatica esta en la carpeta src, json.grammar# Asignacion-2-Lenguaje-de-programacion
+La gramatica esta en la carpeta src, json.grammar
