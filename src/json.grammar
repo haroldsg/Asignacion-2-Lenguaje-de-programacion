@@ -1,0 +1,33 @@
+@top JSON {value}
+
+value {Number | String | Array | Object | True | False | Null}
+
+//Reglas de comportamiento
+String {string}                               
+Array  {"[" list<value>? "]"}
+list<item> {item ("," item)*}
+Object {"{" list<Member>? "}"}
+Member {MemberElement ":" value}
+MemberElement {string}
+
+@tokens {
+    //simbolos
+    string {'"' char* '"'}
+    char {$[\u{20}\u{21}\u{23}-\u{5b}\u{5d}-\u{24f}] | '\\"'}
+
+    //digitos
+    integer  {'0' | $[1-9] @digit*}
+    Number {'-'? integer fraction? exponent?}
+    exponent  {$[eE] $[+\-]? @digit+}
+    fraction {'.' @digit+}
+    
+    //booleanos
+    True  {"true"}
+    False {"false"}
+    Null  {"null"}
+
+    whitespace {@whitespace+}
+}
+
+@skip {whitespace}
+

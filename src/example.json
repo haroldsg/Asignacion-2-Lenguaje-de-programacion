@@ -1,0 +1,41 @@
+{
+    "cadena": "Hola, mundo!",
+    "numero_entero": 123,
+    "numero_decimal": 3.14,
+    "booleano_verdadero": true,
+    "booleano_falso": false,
+    "arreglo": [
+      "elemento1",
+      2,
+      true,
+      {
+        "propiedad_anidada": "valor_anidado"
+      }
+    ],
+    "objeto": {
+      "propiedad1": "valor1",
+      "propiedad2": 456,
+      "propiedad3": {
+        "sub_propiedad1": "sub_valor1",
+        "sub_propiedad2": false
+      }
+    },
+    "arreglo_de_objetos": [
+      {
+        "nombre": "Juan",
+        "edad": 30
+      },
+      {
+        "nombre": "María",
+        "edad": 25
+      }
+    ],
+    "objeto_con_arreglo": {
+      "propiedades": [
+        "propiedad_a",
+        "propiedad_b",
+        "propiedad_c"
+      ]
+    },
+      "caracteres_especiales": "!@#$%^&*()_+-=[]{}|;':\",./<>?"
+  }
